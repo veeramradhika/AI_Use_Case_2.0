@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "5leqTMJwu1bOhu0/jrESxBQHDsJuRiAy9kVPyflnN5U2lHiArHxBebVMDaVLXXlAW2h0px5tQ3PzWK2RstHjww==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\veeram.reddy\\source\\repos\\AI_Use_Case_2.0\\AI_Use_Case_2.0\\AI_Use_Case_2.0.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\veeram.reddy\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
