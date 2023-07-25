@@ -1,48 +1,28 @@
 ﻿@{
     ViewData["Title"] = "Use Case 2";
 }
-<!DOCTYPE html>
-<html>
-<head>
-<style>
 
-.button1 {background-color: #4CAF50;} /* Green */
-
-</style>
-</head>
-<body>
-    
 <h1>Use Case 2</h1>
 
-@using (Html.BeginForm("Get", "Home", FormMethod.Post))
+@using (Html.BeginForm("Get", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
-    <label>Prompt 1:</label>
-    <textarea type="text" name="prompt1"></textarea>
+    <label>Use File as Reference:</label>
+    <input type="checkbox" name="useFileAsReference" />
     <br />
 
-    <label>Prompt 2:</label>
-    <textarea type="text" name="prompt2"></textarea>
+    <label>Prompt:</label>
+    <input type="text" name="prompt" />
     <br />
 
-    <label>Prompt 3:</label>
-    <textarea type="text" name="prompt3"></textarea>
+    <label>Upload CSV File:</label>
+    <input type="file" name="file" accept=".csv" />
     <br />
 
-    <!-- Add input fields for the user to enter the desired CSV file names -->
-    <label>CSV File Name for Response 1:</label>
-    <input type="text" name="csvFileName1" />
+    <label>Filename for Response:</label>
+    <input type="text" name="filename" />
     <br />
 
-    <label>CSV File Name for Response 2:</label>
-    <input type="text" name="csvFileName2" />
-    <br />
-
-    <label>CSV File Name for Response 3:</label>
-    <input type="text" name="csvFileName3" />
-    <br />
-
-   
-    <button class="button button1" type="submit" value="Submit">Submit</button>
+    <input type="submit" value="Submit" />
 }
 
 @if (ViewBag.FileNames != null && ViewBag.FileNames.Count > 0)
@@ -56,5 +36,3 @@
         </p>
     }
 }
-</body>
-</html>
