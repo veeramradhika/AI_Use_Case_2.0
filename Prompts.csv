@@ -1,0 +1,23 @@
+# AI_Use_Case_2.0
+
+prompt 1 :
+
+generate the attendance sheet of 3 employees of month june and it consists of the fields: Employee ID(emp..),Date,Time-in(am),time-out(pm) and total hours 
+worked(Time-in+time-out). Mark saturdays and sundays as (weekend) and the weekend days working hours should be (zero). Mark some random days as leave, if the 
+employee is on leave then mark as (leave) and for leave, mark the working hours as (zero) for the 3 employes in csv file format.
+
+
+
+
+prompt 2 : 
+
+Generate Employee-leaves for 3 employees for june month 2023 in csv format and the fields are Employee name,Emplyee Id(EMP...),leave type(),Start Date(DD-MM-YY),End Date 
+(DD-MM-YY), Leave Duration(half day/full day and mention the number of days()),Leave Status(Approved,NotApproved) and leave duration() take at lease 1
+Approved or NotApproved in csv format.And also generate the holiday calendar for a IT employee in India for year 2023 with correct dates and day names 
+conatain the fields Date(dd/mm/yy),Day,Holiday name,Type()  in  csv format file.
+
+prompt 3:
+
+Generate the Attendance sheet for 3 employees for june month 2023 with exact dates and days in to csv format which contain Fields Employee Name,
+Employee Id(EMP...),Total Working Day(total working + leaves(if approved)or else - leaves(if not approved)),Total Working Hours(Calculated),excluding weekends, holidays, leaves that has been taken by 3 employees
+and based on number of working days, each day 8 hours being working hours.
